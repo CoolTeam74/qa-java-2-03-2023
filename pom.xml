@@ -11,6 +11,7 @@
     <modules>
         <module>test-framework</module>
         <module>unit-tests</module>
+        <module>example</module>
     </modules>
 
     <properties>
@@ -18,5 +19,17 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>test-framework</artifactId>
+                <version>${project.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 
 </project>

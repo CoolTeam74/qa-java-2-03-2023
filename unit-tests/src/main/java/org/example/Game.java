@@ -10,6 +10,10 @@ public class Game {
         this.winnerPrinter = winnerPrinter;
     }
 
+    private void doSomething() {
+        System.out.println("I'm private");
+    }
+
     public void playGame(Player player1, Player player2) {
         int player1Result = dice.roll();
         int player2Result = dice.roll();
