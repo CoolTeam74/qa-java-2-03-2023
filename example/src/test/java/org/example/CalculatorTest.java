@@ -23,7 +23,7 @@ public class CalculatorTest {
         System.out.println("message: before");
     }
 
-    @After
+    @Before
     public void after() {
         System.out.println("message: after");
     }
