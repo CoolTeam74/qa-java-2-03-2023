@@ -1,7 +1,7 @@
 package org.example;
 
 public class CalculatorTest {
-    @Test
+    @Test(name = "test sum successful")
     public void testSumSuccess() {
         Calculator calculator = new Calculator(1, 2);
         int result = calculator.sum();
