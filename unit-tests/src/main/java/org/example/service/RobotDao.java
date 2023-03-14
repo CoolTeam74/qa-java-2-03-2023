@@ -1,7 +1,11 @@
 package org.example.service;
 
 import org.example.model.Robot;
-import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface RobotDao extends JpaRepository<Robot, Long> {
+import java.util.Optional;
+
+public interface RobotDao {
+    Optional<Robot> findById(Long id);
+
+    Robot save(Robot entity);
 }
