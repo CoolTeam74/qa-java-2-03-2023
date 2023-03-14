@@ -9,11 +9,11 @@ services:
       - POSTGRES_PASSWORD=postgres
     ports:
       - '5432:5432'
-    volumes:
-      - db:/var/lib/postgresql/data
-volumes:
-  db:
-    driver: local
+#    volumes:
+#      - db:/var/lib/postgresql/data
+#volumes:
+#  db:
+#    driver: local
 
 #  pgadmin:
 #    container_name: pgadmin_container
