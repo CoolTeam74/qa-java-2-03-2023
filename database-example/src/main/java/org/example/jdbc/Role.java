@@ -1,12 +1,8 @@
-package org.example;
+package org.example.jdbc;
 
-import java.util.List;
-
-public class User {
+public class Role {
     private Long id;
     private String name;
-
-    private List<Role> roles;
 
     public Long getId() {
         return id;
@@ -24,20 +20,11 @@ public class User {
         this.name = name;
     }
 
-    public List<Role> getRoles() {
-        return roles;
-    }
-
-    public void setRoles(List<Role> roles) {
-        this.roles = roles;
-    }
-
     @Override
     public String toString() {
-        return "User{" +
+        return "Role{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", roles=" + roles +
                 '}';
     }
 }
