@@ -15,6 +15,8 @@ public class Main {
     public static void main(String[] args) {
         DataSource dataSource = new DriverManagerDataSource(DATABASE_URL, USERNAME, PASSWORD);
         flywayMigrate(dataSource);
+
+
     }
 
     private static void flywayMigrate(DataSource dataSource) {
