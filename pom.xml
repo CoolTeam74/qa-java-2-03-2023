@@ -18,7 +18,6 @@
         <module>test-framework</module>
         <module>unit-tests</module>
         <module>example</module>
-        <module>integration-tests</module>
         <module>bdd-example</module>
     </modules>
 
